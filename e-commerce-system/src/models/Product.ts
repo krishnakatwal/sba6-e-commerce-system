@@ -8,3 +8,82 @@
 
 //Discounted Price=price×(1−100discountPercentage​)
 
+export class Product {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  price: number;
+  discountPercentage: number;
+  // rating: number;
+  // stock: number;
+  // tags: string[];
+  // brand: string;
+  // sku: string;
+  // weight: number;
+  // dimensions: string[];
+  // warrantyInformation: string;
+  // shippingInformation: string;
+  // availabilityStatus: string;
+  // reviews: string[];
+  // returnPolicy: string;
+  // minimumOrderQuantity: number;
+  // meta: string[];
+  // images: string[];
+  // thumbnail: string;
+
+  constructor(
+    id: number,
+    title: string,
+    description: string,
+    category: string,
+    price: number,
+    discountPercentage: number,
+    rating: number,
+    stock: number,
+    tags: string[],
+    brand: string,
+    sku: string,
+    weight: number,
+    dimensions: string[],
+    warrantyInformation: string,
+    shippingInformation: string,
+    availabilityStatus: string,
+    reviews: string[],
+    returnPolicy: string,
+    minimumOrderQuantity: number,
+    meta: string[],
+    images: string[],
+    thumbnail: string,
+  ) {
+    this.id = id;
+    this.title = title;
+    this.description = description;
+    this.category=category;
+    this.price = price;
+    this.discountPercentage =discountPercentage;
+  //   this.rating=rating;
+  //   this.stock=stock;
+  //   this.tags=tags;
+  //   this.brand=brand;
+  //   this.sku=sku;
+  //   this.weight=weight;
+  //   this.dimensions=dimensions;
+  //   this.warrantyInformation=warrantyInformation;
+  //   this.shippingInformation=shippingInformation;
+  //   this.availabilityStatus=availabilityStatus;
+  //   this.reviews=reviews;
+  //   this.returnPolicy=returnPolicy;
+  //   this.minimumOrderQuantity=minimumOrderQuantity;
+  //   this.meta=meta;
+  //   this.images=images;
+  //   this.thumbnail=thumbnail;
+  }
+  displayDetails(): string {
+    return `Product: ${this.id},${this.title},Price: ${this.price},description:${this.category},Category:${this.discountPercentage}`;
+  }
+  getPriceWithDiscount(): number {
+    return  this.price * (1 - this.discountPercentage / 100);
+
+  }
+}
