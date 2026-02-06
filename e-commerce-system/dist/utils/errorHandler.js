@@ -27,5 +27,5 @@ export class DataError extends Error {
 //     }
 //   })
 //   .finally(() => {
-//     console.log("All API calls  attempted ✅");
+//     console.log("All API calls  attempted");
 //   });

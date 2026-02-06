@@ -6,5 +6,5 @@ Note that the product data returned from the API does not include a taxPercentag
 Apply a default standard tax rate of 4.75% to each product; however, products with a category of “groceries” should only be taxed at 3%. */
 const taxRate = 10;
 export function calculateTax(product) {
-    return product.price * (taxRate / 100);
+    return product.getPriceWithDiscount() * (taxRate / 100);
 }

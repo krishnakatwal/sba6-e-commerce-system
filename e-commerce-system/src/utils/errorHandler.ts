@@ -5,7 +5,7 @@ Implement a custom error class and functions to handle different types of errors
  */
 
 //Create Custom Error Classes functions to handle different types of errors gracefully.
-  export class NetworkError extends Error {
+export class NetworkError extends Error {
   constructor(message = "Network connection error") {
     super(message);
     this.name = "NetworkError";

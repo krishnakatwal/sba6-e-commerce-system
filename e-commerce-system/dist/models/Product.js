@@ -7,9 +7,9 @@
 export class Product {
     id;
     title;
-    // description: string;
-    category;
     price;
+    category;
+    description;
     discountPercentage;
     // rating: number;
     // stock: number;
@@ -27,29 +27,29 @@ export class Product {
     // meta: string[];
     // images: string[];
     // thumbnail: string;
-    constructor(id, title, description, category, price, discountPercentage) {
+    constructor(id, title, price, category, description, discountPercentage) {
         this.id = id;
         this.title = title;
-        // this.description = description;
-        this.category = category;
         this.price = price;
+        this.category = category;
+        this.description = description;
         this.discountPercentage = discountPercentage;
-        // this.rating=rating;
-        // this.stock=stock;
-        // this.tags=tags;
-        // this.brand=brand;
-        // this.sku=sku;
-        // this.weight=weight;
-        // this.dimensions=dimensions;
-        // this.warrantyInformation=warrantyInformation;
-        // this.shippingInformation=shippingInformation;
-        // this.availabilityStatus=availabilityStatus;
-        // this.reviews=reviews;
-        // this.returnPolicy=returnPolicy;
-        // this.minimumOrderQuantity=minimumOrderQuantity;
-        // this.meta=meta;
-        // this.images=images;
-        // this.thumbnail=thumbnail;
+        //   this.rating=rating;
+        //   this.stock=stock;
+        //   this.tags=tags;
+        //   this.brand=brand;
+        //   this.sku=sku;
+        //   this.weight=weight;
+        //   this.dimensions=dimensions;
+        //   this.warrantyInformation=warrantyInformation;
+        //   this.shippingInformation=shippingInformation;
+        //   this.availabilityStatus=availabilityStatus;
+        //   this.reviews=reviews;
+        //   this.returnPolicy=returnPolicy;
+        //   this.minimumOrderQuantity=minimumOrderQuantity;
+        //   this.meta=meta;
+        //   this.images=images;
+        //   this.thumbnail=thumbnail;
     }
     displayDetails() {
         return `Product: ${this.id},${this.title},Price: ${this.price},description:${this.category},Category:${this.discountPercentage}`;
