@@ -83,6 +83,6 @@ export class Product {
     return `Product: ${this.id},${this.title},Price: ${this.price},description:${this.category},Category:${this.discountPercentage}`;
   }
   getPriceWithDiscount(): number {
-    return this.price * (1 - this.discountPercentage / 100);
+    return this.price * (this.discountPercentage / 100);
   }
 }

@@ -9,7 +9,7 @@ Apply a default standard tax rate of 4.75% to each product; however, products wi
 
 import type { Product } from "../models/Product.js";
 
-const taxRate = 10;
+const taxRate = 4.75;
 export function calculateTax(product: Product): number {
   return product.getPriceWithDiscount() * (taxRate / 100);
 }
